@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>初级调酒师课程 - 2980元 | 14天28课时</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+      padding: 20px;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 30px;
+      background: rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      color: #ffcc00;
+      text-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+    }
+
+    .price {
+      font-size: 1.6em;
+      color: #00ff9d;
+      margin: 12px 0;
+      font-weight: 500;
+    }
+
+    .duration {
+      color: #aaa;
+      font-size: 1.1em;
+    }
+
+    .content {
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .day {
+      background: rgba(255, 255, 255, 0.08);
+      margin: 25px 0;
+      padding: 25px;
+      border-radius: 15px;
+      border-left: 6px solid #ffcc00;
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .day:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      border-left-color: #00ff9d;
+    }
+
+    .day h3 {
+      color: #ffcc00;
+      margin-bottom: 15px;
+      font-size: 1.4em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .day h3::before {
+      content: "📅";
+      font-size: 1.2em;
+    }
+
+    .day ol {
+      padding-left: 20px;
+    }
+
+    .day li {
+      margin: 10px 0;
+      font-size: 1.1em;
+      color: #eee;
+    }
+
+    .progress {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    .progress-bar {
+      height: 6px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 3px;
+      margin: 10px auto;
+      width: 80%;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 50%; /* 14天中的7天已完成示意 */
+      background: linear-gradient(90deg, #ffcc00, #00ff9d);
+      border-radius: 3px;
+    }
+
+    .cocktails {
+      margin-top: 40px;
+    }
+
+    .cocktails h3 {
+      color: #00ff9d;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .cocktails h3::before {
+      content: "🍸";
+      font-size: 1.4em;
+    }
+
+    .cocktails ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .cocktails li {
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cocktails li:hover {
+      background: rgba(0, 255, 157, 0.2);
+      transform: scale(1.03);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .cocktails li::before {
+      content: "🍸";
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      font-size: 0.9em;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2em;
+      }
+      .container {
+        margin: 10px;
+        border-radius: 12px;
+      }
+      .content, header {
+        padding: 20px;
+      }
+      .day {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>初级调酒师课程</h1>
+      <div class="price">💰 2980元</div>
+      <div class="duration">📅 14天（28课时）｜🎯 零基础入门</div>
+    </header>
+
+    <div class="content">
+      <div class="progress">
+        <div>课程进度：第0天 / 共14天</div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+
+      <!-- 每日课程 -->
+      <div class="day">
+        <h3>第一天：职业认知</h3>
+        <ol>
+          <li>调酒师的前景，酒吧的行业发展</li>
+          <li>调酒师的工资，调酒师的级别（工资）</li>
+          <li>调酒师的仪容仪表</li>
+          <li>调酒师的职业道德</li>
+          <li>课程介绍，以及班级制度</li>
+          <li>发放教科材料</li>
+        </ol>
+      </div>
+
+      <div class="day">
+        <h3>第二天：工具掌握</h3>
+        <ol>
+          <li>调酒器具认识</li>
+          <li>调酒器具的使用以及练习</li>
+        </ol>
+      </div>
+
+      <div class="day">
+        <h3>第三天：鸡尾酒基础</h3>
+        <ol>
+          <li>鸡尾酒的定义以及历史</li>
+          <li>调酒的方法方式</li>
+          <li>鸡尾酒的各种分类</li>
+        </ol>
+      </div>
+
+      <div class="day">
+        <h3>第四天：六大基酒</h3>
+        <ol>
+          <li>六大基酒的认识（常用品牌）</li>
+          <li>六大基酒的品鉴</li>
+        </ol>
+      </div>
+
+      <div class="day">
+        <h3>第五天：配制酒</h3>
+        <ol>
+          <li>配制酒的认识以及品鉴（常用品牌）</li>
+        </ol>
+      </div>
+
+      <div class="day">
+        <h3>第六天：辅料认知</h3>
+        <ol>
+          <li>调酒的辅料认识（品牌）</li>
+        </ol>
+      </div>
+
+      <div class="day">
+        <h3>第七天：装饰艺术</h3>
+        <ol>
+          <li>装饰物的介绍以及做法</li>
+        </ol>
+      </div>
+
+      <!-- 鸡尾酒列表 -->
+      <div class="cocktails">
+        <h3>28款实操鸡尾酒</h3>
+        <ul>
+          <li>自由古巴</li>
+          <li>螺丝刀</li>
+          <li>金汤力</li>
+          <li>龙舌兰日出</li>
+          <li>长岛冰茶</li>
+          <li>威士忌酸</li>
+          <li>玛格丽特</li>
+          <li>莫吉托</li>
+          <li>B52</li>
+          <li>尼格罗尼</li>
+          <li>古典</li>
+          <li>大都会</li>
+          <li>边车</li>
+          <li>马天尼</li>
+          <li>曼哈顿</li>
+          <li>莫斯科骡子</li>
+          <li>教父</li>
+          <li>黑俄罗斯</li>
+          <li>白俄罗斯</li>
+          <li>得其利</li>
+          <li>椰林飘香</li>
+          <li>金菲士</li>
+          <li>迈泰</li>
+          <li>僵尸</li>
+          <li>青草蜢</li>
+          <li>红粉佳人</li>
+          <li>新加坡司令</li>
+          <li>血腥玛丽</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      🍸 欢迎报名｜📞 联系电话：138-XXXX-XXXX
+    </footer>
+  </div>
+</body>
+</html>
